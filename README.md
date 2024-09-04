@@ -11,7 +11,7 @@ Features
 To run Genrify locally on your machine, follow these steps:
 
 1. Clone the repository:
-   git clone https://github.com/your-username/genrify.git
+   git clone https://github.com/daves-imapct/Genrify.git
    
    cd genrify
 2. Install dependencies:
