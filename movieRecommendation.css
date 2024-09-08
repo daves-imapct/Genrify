@@ -142,7 +142,7 @@ body{
     width:100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin: 20px auto 0;
 }
 .genres div{
     border:1px solid #a0a0a0;
@@ -303,4 +303,217 @@ body{
 .inline{
     display: flex;
     align-items: center;
+}
+/* Default Styles (for large screens) */
+
+/* Media Query for Tablets (768px - 1024px) */
+@media only screen and (max-width: 1024px) {
+    .nav-list {
+        padding-right: 20px;
+    }
+
+    .product {
+        font-size: 28px;
+        margin-left: 20px;
+    }
+
+    .search-container {
+        width: 70%;
+    }
+
+    .infos {
+        min-width: 95%;
+    }
+
+    .movie-name {
+        font-size: 30px;
+    }
+
+    .rating-number {
+        font-size: 14px;
+    }
+
+    .extra-info p {
+        font-size: 12px;
+    }
+
+    .plot-write, .cast-write, .writers-write {
+        font-size: 13px;
+    }
+
+    .top-heading {
+        font-size: 25px;
+    }
+
+    .top-number-name {
+        font-size: 18px;
+    }
+
+    .top-number-rating {
+        font-size: 13px;
+    }
+
+    .side-bar {
+        width: 150px;
+        right: 50px;
+    }
+}
+
+/* Media Query for Mobile Phones (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .nav-bar {
+        height: 65px;
+    }
+
+    .nav-list {
+        padding-right: 15px;
+    }
+
+    .product {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .search-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .infos-box {
+        width: 100%;
+        border-radius: 0;
+        padding-right: 20px;
+    }
+
+    .movie-name {
+        font-size: 28px;
+    }
+
+    .rating-number {
+        font-size: 14px;
+    }
+
+    .extra-info p {
+        font-size: 13px;
+    }
+
+    .plot-write, .cast-write, .writers-write {
+        font-size: 15px;
+    }
+
+    .top-heading {
+        font-size: 20px;
+    }
+
+    .top-number-name {
+        font-size: 16px;
+    }
+
+    .top-number-rating {
+        font-size: 12px;
+    }
+
+    .top-container {
+        width: 95%;
+    }
+
+    .top-numbers {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .side-bar {
+        width: 145px;
+        right: 30px;
+    }
+    .side-bar li{
+        font-size: 15px;
+    }
+    .side-bar li a {
+        padding-left: 10px;
+    }
+
+    .side-bar li:nth-of-type(1) a {
+        padding-right: 10px;
+    }
+
+    .side-bar li:nth-of-type(2) a {
+        padding-right: 40px;
+    }
+
+    .side-bar li:nth-of-type(3) a {
+        padding-right: 10px;
+    }
+}
+
+/* Media Query for Small Mobile Phones (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    .product {
+        font-size: 20px;
+    }
+
+    .nav-list {
+        padding-right: 10px;
+    }
+
+    .search-container {
+        width: 85%;
+        padding: 10px;
+    }
+
+    .movie-name {
+        font-size: 25px;
+    }
+
+    .rating-number {
+        font-size: 13px;
+    }
+
+    .extra-info p {
+        font-size: 12px;
+    }
+
+    .plot-write, .cast-write, .writers-write {
+        font-size: 13px;
+    }
+
+    .top-heading {
+        font-size: 18px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .top-number-name {
+        font-size: 14px;
+    }
+
+    .top-number-rating {
+        font-size: 10px;
+    }
+
+    .top-container {
+        width: 100%;
+    }
+
+    .top-numbers {
+        padding: 8px;
+        gap: 10px;
+    }
+
+    .side-bar {
+        width: 120px;
+        right: 10px;
+    }
+    .side-bar li{
+        font-size: 13px;
+    }
+    .side-bar li a {
+        padding-left: 5px;
+    }
+    .genres div{
+        border:1px solid #a0a0a0;
+        padding: 0.4em 1.6em;
+        border-radius: 0.4em;
+        font-size: 0.6em;
+    }
 }
