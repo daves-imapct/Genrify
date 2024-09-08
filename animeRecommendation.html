@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Recommendation</title>
+    <link rel="stylesheet" href="animeRecommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="product">Genrify</li>
+                <li onclick = showSideBar() class="open"><a href="#"><svg class="svg"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li onclick = closeSideBar() class="close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="red"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></svg></a></li>
+            </ul>
+            <ul class="side-bar">
+                <li><a href="./movieRecommendation.html">Movies/Series</a></li>
+                <li><a href="./animeRecommendation.html">Anime</a></li>
+                <li><a href="./mangaRecommendation.html">Manga/Manhwa</a></li> 
+            </ul>
+        </nav>
+        </header>
+        <section class="search-box">
+            <div class="search-container">
+                <input type="text" class="search" placeholder="Enter anime name...." spellcheck="false">
+                <button class="search-click"> <i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </section>
+    <div class="search-result">
+        <div class="media-image" id="media-image">
+            <img src="./the-guy-one-sheet-v3.webp" class="anime-cover">
+        </div>
+        <div class="infos-box">
+            <div class="infos">
+                <div class="part-one">
+                <h1 class="anime-name"></h1>
+                <div class="rating"><i class="fa fa-star" aria-hidden="true"></i><p class="rating-number">9.0</p></div>
+                    <div class="extra-info">
+                        <p class="status"></p>
+                        <p class="year"></p>
+                        <p class="episodes"></p>
+                    </div>
+                    <div class="genres"></div>
+                    </div>
+                    <div class="plot">
+                        <p class="plot-heading">Plot:</p>
+                        <p class="anime-description"></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <section class="error">
+        <p>No results found</p>
+    </section>
+    <section class="top-info">
+        <h1 class="top-heading">Top 10 trending anime for the week</h1>
+        <div class="top-container">
+            <div class="top-numbers">
+                <p class="numbering">1</p>
+                <div class="detail">
+                <p class="top-number-name anime1"></p>
+                </div>
+            </div>
+            <div class="top-numbers"><p class="numbering">2</p>
+                <div class="detail">
+                    <p class="top-number-name anime2"></p>
+                    </div>
+            </div>
+            <div class="top-numbers"><p class="numbering">3</p>
+                <div class="detail">
+                <p class="top-number-name anime3"></p>
+                </div>
+            </div>
+            <div class="top-numbers"><p class="numbering">4</p>
+                <div class="detail">
+                <p class="top-number-name anime4"></p>
+                </div>
+            </div>
+            <div class="top-numbers"><p class="numbering">5</p>
+                <div class="detail">
+                <p class="top-number-name anime5"></p>
+                </div>
+            </div>
+            <div class="top-numbers"><p class="numbering">6</p>
+                <div class="detail">
+                <p class="top-number-name anime6"></p>
+                </div>
+            </div>
+            <div class="top-numbers"><p class="numbering">7</p>
+                <div class="detail">
+                <p class="top-number-name anime7"></p>
+                </div>
+            </div>
+            <div class="top-numbers"><p class="numbering">8</p>
+                <div class="detail">
+                <p class="top-number-name anime8">
+                </div>
+            </div>
+            <div class="top-numbers"><p class="numbering">9</p>
+                <div class="detail">
+                <p class="top-number-name anime9"></p>
+                </div>
+            </div>
+            <div class="top-numbers">
+                <p class="numbering">10</p>
+                <div class="detail">
+                <p class="top-number-name anime10"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showSideBar(){
+            const sidebar = document.querySelector('.side-bar')
+            const open = document.querySelector('.open')
+            const close = document.querySelector('.close')
+            sidebar.style.display = 'flex'
+            open.style.display = 'none'
+            close.style.display='flex'
+        }
+        function closeSideBar(){
+            const sidebar = document.querySelector('.side-bar')
+            const open = document.querySelector('.open')
+            const close = document.querySelector('.close')
+            sidebar.style.display = 'none'
+            open.style.display = 'flex'
+            close.style.display='none'
+        }
+    </script>
+    <script src="anime.js"></script>
+    <script src="anime2.js"></script>
+</body>
+</html>
