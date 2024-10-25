@@ -6,22 +6,7 @@ Features
 - Genre-Based Exploration: Dive deep into specific genres to discover new content that matches your taste.
 - Detailed Information: Access summaries, ratings, release dates, and more for each title to help you make informed decisions.
 - User-Friendly Interface: Navigate effortlessly through a clean and intuitive design.
-
-## Installation
-To run Genrify locally on your machine, follow these steps:
-
-1. Clone the repository:
-   git clone https://github.com/daves-imapct/Genrify.git
-   
-   cd genrify
-2. Install dependencies:
-If your project requires dependencies, install them with:
-npm install
-3. Run the application:
-npm start
-4. Open in your browser:
-Visit http://localhost:3000 in your web browser to explore Genrify.
-
+- 
 Usage
 Search for Content: Use the search bar to find information on any movie, series, anime, manga, or manhwa.
 Explore Trending Titles: Check out the top trending content of the week and stay updated with what's popular.
